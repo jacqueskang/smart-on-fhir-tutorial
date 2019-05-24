@@ -17273,6 +17273,7 @@ function providers(fhirServiceUrl, provider, callback, errback){
     return;
   }
 
+	alert(stripTrailingSlash(fhirServiceUrl) + "/metadata");
   Adapter.get().http({
     method: "GET",
     url: stripTrailingSlash(fhirServiceUrl) + "/metadata"
